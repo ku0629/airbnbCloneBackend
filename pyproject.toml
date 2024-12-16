@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "airbnb-clone-restart-backend"
+version = "0.1.0"
+description = ""
+authors = ["MINMO <ku0629@naver.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "airbnb_clone_restart_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.3"
+pillow = "^10.0.0"
+djangorestframework = "^3.14.0"
+pyjwt = "^2.8.0"
+django-environ = "^0.11.2"
+django-cors-headers = "^4.6.0"
+requests = "^2.32.3"
+psycopg2-binary = "^2.9.10"
+dj-database-url = "^2.3.0"
+whitenoise = {extras = ["brotli"], version = "^6.8.2"}
+gunicorn = "^23.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

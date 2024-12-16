@@ -1,0 +1,19 @@
+GET /categories
+POST /categories
+
+GET /categories/1
+PUT /categories/1
+
+
+    "amenities": [1,2,3,4],
+    "category": 1,
+    "name": "Test from DRF",
+    "country": "Korea",
+    "city": "New York",
+    "price": 130,
+    "rooms": 20,
+    "toilets": 20,
+    "description": "One room with one toilet",
+    "address": "New York Street 13",
+    "pet_friendly": true,
+    "kind": "private_room"
