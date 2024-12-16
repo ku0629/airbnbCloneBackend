@@ -1,13 +1,15 @@
 databases:
-  - name: mysitedb
+  - name: airbnbclone
     plan: free
-    databaseName: mysite
-    user: mysite
+    databaseName: airbnbclone
+    user: airbnbclone
+    region: singapore
 
 services:
   - type: web
     plan: free
-    name: mysite
+    name: airbnbclone
+    region: singapore
     runtime: python
     buildCommand: "./build.sh"
     startCommand: "python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"
